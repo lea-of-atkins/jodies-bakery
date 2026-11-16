@@ -416,9 +416,9 @@
                 </p>
 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="https://wa.me/447700900000?text=Hi%20Jodie,%20I'd%20like%20to%20reserve%20some%20bakes%20from%20your%20weekly%20menu!" target="_blank" class="w-full sm:w-auto bg-[#25D366] hover:bg-[#20ba5a] text-white px-8 py-4 rounded-full font-semibold text-base shadow-lg transition-all flex items-center justify-center space-x-3">
+                    <a href="https://wa.me/447976595862?text=Hi%20Jodie,%20I'd%20like%20to%20reserve%20some%20bakes%20from%20your%20weekly%20menu!" target="_blank" class="w-full sm:w-auto bg-[#25D366] hover:bg-[#20ba5a] text-white px-8 py-4 rounded-full font-semibold text-base shadow-lg transition-all flex items-center justify-center space-x-3">
                         <i class="fa-brands fa-whatsapp text-2xl"></i>
-                        <span>WhatsApp Jodie (+44 7700 900000)</span>
+                        <span>WhatsApp Jodie (+44 7976 595862)</span>
                     </a>
                     <button onclick="copyPhoneNumber()" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-stoneBg border border-white/20 px-6 py-4 rounded-full font-medium text-base transition-all flex items-center justify-center space-x-2">
                         <i class="fa-solid fa-copy text-softGold"></i>
@@ -500,7 +500,7 @@
             </p>
 
             <div class="flex items-center space-x-4">
-                <a href="https://wa.me/447700900000" target="_blank" class="w-9 h-9 rounded-full bg-white/10 hover:bg-terracotta hover:text-white flex items-center justify-center text-stoneBg transition-colors" title="WhatsApp">
+                <a href="https://wa.me/447976595862" target="_blank" class="w-9 h-9 rounded-full bg-white/10 hover:bg-terracotta hover:text-white flex items-center justify-center text-stoneBg transition-colors" title="WhatsApp">
                     <i class="fa-brands fa-whatsapp text-sm"></i>
                 </a>
                 <a href="#menu" class="w-9 h-9 rounded-full bg-white/10 hover:bg-terracotta hover:text-white flex items-center justify-center text-stoneBg transition-colors" title="Menu">
@@ -517,7 +517,7 @@
 
         // Helper function to prepare order message and direct to WhatsApp
         function prepareOrder(itemName, price) {
-            const phoneNumber = "447700900000";
+            const phoneNumber = "447976595862";
             const message = `Hi Jodie! I'd like to reserve a ${itemName} (${price}) from your weekly menu. Please let me know collection details!`;
             const encodedUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(encodedUrl, '_blank');
@@ -525,14 +525,14 @@
 
         // Copy phone number helper with toast
         function copyPhoneNumber() {
-            const numberText = "+44 7700 900000";
+            const numberText = "+44 7976 595862";
             const tempInput = document.createElement("textarea");
             tempInput.value = numberText;
             document.body.appendChild(tempInput);
             tempInput.select();
             try {
                 document.execCommand("copy");
-                showToast("Bakery mobile number copied (+44 7700 900000)!");
+                showToast("Bakery mobile number copied (+44 7976 595862)!");
             } catch (err) {
                 showToast("Unable to copy automatically.");
             }
